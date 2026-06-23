@@ -1,1 +1,17 @@
 
+-- create databse
+
+create database Manufacturing_Line_Productivity;
+
+use manufacturing_line_productivity;
+go
+
+-- createing Bronze table for storing raw data
+   create schema Bronze;
+
+-- creating silver schema for storing cleaned data
+   create schema Silver;
+
+
+-- creating Gold schema for storing aggregated data
+   create schema Gold;
