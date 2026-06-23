@@ -1,1 +1,12 @@
-
+-- creating bronze layer
+if OBJECT_ID('bronze.Manufacturing', 'U') is not null
+drop table bronze.Manufacturing;
+create table bronze.Manufacturing
+(
+Date date,
+Product varchar(50),
+Batch int,
+Operator varchar(50),
+Start_Time time,
+End_Time time
+)
